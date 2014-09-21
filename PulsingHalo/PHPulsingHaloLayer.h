@@ -10,8 +10,6 @@
 
 @interface PHPulsingHaloLayer : CALayer
 
-@property (nonatomic, strong) NSString *testString;
-
 @property (nonatomic) CGFloat radius;                   //半径大小 default:60pt
 @property (nonatomic) NSTimeInterval animationDuration; //持续时间 default:3s
 @property (nonatomic) NSTimeInterval pulseInterval;     //暂停时间 default is 0s
