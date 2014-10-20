@@ -17,8 +17,35 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     
+    UILabel *aLabel = [[UILabel alloc] initWithFrame:self.window.bounds];
+    aLabel.numberOfLines = 0;
+    aLabel.textAlignment = NSTextAlignmentCenter;
+    aLabel.text = @"点我\n或者拖动";
+    [self.window addSubview:aLabel];
+    
+    UIButton *clearButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 100, 30)];
+    [clearButton setTitle:@"clearn" forState:UIControlStateNormal];
+    [clearButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    [clearButton setTitleColor:[UIColor redColor] forState:UIControlStateHighlighted];
+    [clearButton addTarget:self action:@selector(clearn) forControlEvents:UIControlEventTouchUpInside];
+    clearButton.center = CGPointMake(self.window.bounds.size.width - 50, 40);
+    [self.window addSubview:clearButton];
+    
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+- (void)clearn
+{
+    NSArray *sublayers = [self.window.layer.sublayers mutableCopy];
+    for(PHPulsingHaloLayer *obj in sublayers)
+    {
+        if([obj isKindOfClass:[PHPulsingHaloLayer class]] && obj.superlayer == self.window.layer)
+        {
+            [obj closeAnimation];
+            [obj removeFromSuperlayer];
+        }
+    }
 }
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event

@@ -10,29 +10,29 @@
 	<string>PulsingHalo</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>92065F4A-2BF2-4862-93A2-01A43EB7D8D2</key>
+		<key>94AAC01A0BAF230BC391B74FC3808C542BD52532</key>
 		<string>https://github.com/standone/PulsingHalo.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>PulsingHalo.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>92065F4A-2BF2-4862-93A2-01A43EB7D8D2</key>
+		<key>94AAC01A0BAF230BC391B74FC3808C542BD52532</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/standone/PulsingHalo.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>92065F4A-2BF2-4862-93A2-01A43EB7D8D2</string>
+	<string>94AAC01A0BAF230BC391B74FC3808C542BD52532</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>92065F4A-2BF2-4862-93A2-01A43EB7D8D2</string>
+			<string>94AAC01A0BAF230BC391B74FC3808C542BD52532</string>
 			<key>IDESourceControlWCCName</key>
 			<string>PulsingHalo</string>
 		</dict>
