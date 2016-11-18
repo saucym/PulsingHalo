@@ -31,6 +31,7 @@
     clearButton.center = CGPointMake(self.window.bounds.size.width - 50, 40);
     [self.window addSubview:clearButton];
     
+    self.window.rootViewController = [[UIViewController alloc] init];
     [self.window makeKeyAndVisible];
     return YES;
 }
